@@ -1,1 +1,1 @@
-# Student Management System
+# A desktop-based Student Information Management System built with C# and Windows Forms, designed to manage students, courses, scores, and related academic data through an intuitive graphical interface
