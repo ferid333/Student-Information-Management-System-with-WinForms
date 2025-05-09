@@ -75,7 +75,7 @@ namespace Transparent_Form
         {
             MySqlCommand command = new MySqlCommand("UPDATE `user` SET `username`=@username,`password`=@password WHERE  `iduser`= @id", connect.getconnection);
 
-            //@id,@fn, @ln, @bd, @gd, @ph, @adr, @img
+          
             command.Parameters.Add("@id", MySqlDbType.Int32).Value = id;
             command.Parameters.Add("@username", MySqlDbType.VarChar).Value = username;
             command.Parameters.Add("@password", MySqlDbType.VarChar).Value = password;
@@ -96,7 +96,7 @@ namespace Transparent_Form
         {
             MySqlCommand command = new MySqlCommand("DELETE FROM `user` WHERE `iduser`=@id", connect.getconnection);
 
-            //@id
+     
             command.Parameters.Add("@id", MySqlDbType.Int32).Value = id;
 
             connect.openConnect();

@@ -14,7 +14,8 @@ namespace Transparent_Form
     {
 
         public static UniversityClass _instance;
-        private static readonly string filePath = "C:\\Users\\ferid\\Downloads\\Student Management System\\Student Management System\\Transparent Form\\config.json";
+
+        private static readonly string filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\..\config.json");
         public string uName { get; set; }
         public string uAddress { get; set; }
         public byte[] uImage { get; set; }
